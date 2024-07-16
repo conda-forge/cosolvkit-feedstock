@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cosolvkit-{{ version }}.tar.gz
-  sha256: 3a2b9609ad9fcf1f97578d5d9d17927ae5404f97aac56507016dc065dc29081c
+  sha256: fc2a034a6da540dfe00af07c15a1adba9b8a73eb030d67de3ef4c390d038fb3d
 
 build:
   noarch: python
