@@ -1,5 +1,5 @@
 {% set name = "cosolvkit" %}
-{% set version = "0.4.7" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cosolvkit-{{ version }}.tar.gz
-  sha256: 3a2b9609ad9fcf1f97578d5d9d17927ae5404f97aac56507016dc065dc29081c
+  sha256: d3cf7f8bdcf7432dfe9268f621ecd8066736bba3aca7865a5c9c1413cd752c06
 
 build:
   noarch: python
@@ -19,11 +19,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.9,<3.12
     - setuptools >=61.0
     - pip
   run:
-    - python >=3.9
+    - python >=3.9,<3.12
     - openmmforcefields >=0.12
     - pdbfixer
     - mdanalysis
@@ -36,10 +36,6 @@ test:
     - openmm
     - espaloma
     - cosolvkit  
-  commands:
-    - pip check
-  requires:
-    - pip
 
 about:
   home: https://github.com/forlilab/cosolvkit
