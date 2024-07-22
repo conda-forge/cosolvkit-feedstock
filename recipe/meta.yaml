@@ -24,7 +24,6 @@ requirements:
     - pip
   run:
     - python >=3.9
-    - pint >=0.24
     - openmmforcefields >=0.12
     - pdbfixer
     - mdanalysis
